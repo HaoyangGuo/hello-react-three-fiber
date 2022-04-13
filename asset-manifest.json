@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/hello-react-three-fiber/static/css/main.42515671.css",
-    "main.js": "/hello-react-three-fiber/static/js/main.b797b5df.js",
+    "main.js": "/hello-react-three-fiber/static/js/main.8e75d7be.js",
+    "static/media/particleTexture.png": "/hello-react-three-fiber/static/media/particleTexture.035553057d458bdf62a0.png",
+    "static/media/helvetiker_regular.typeface.blob": "/hello-react-three-fiber/static/media/helvetiker_regular.typeface.9a3651b41d879023c62c.blob",
+    "static/media/textTexture.png": "/hello-react-three-fiber/static/media/textTexture.bd6616e5c8655ae7bb35.png",
     "index.html": "/hello-react-three-fiber/index.html",
     "main.42515671.css.map": "/hello-react-three-fiber/static/css/main.42515671.css.map",
-    "main.b797b5df.js.map": "/hello-react-three-fiber/static/js/main.b797b5df.js.map"
+    "main.8e75d7be.js.map": "/hello-react-three-fiber/static/js/main.8e75d7be.js.map"
   },
   "entrypoints": [
     "static/css/main.42515671.css",
-    "static/js/main.b797b5df.js"
+    "static/js/main.8e75d7be.js"
   ]
 }
