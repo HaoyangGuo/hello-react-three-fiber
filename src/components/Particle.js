@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 import { useLoader, useFrame } from "@react-three/fiber";
+import particleTexture from "../texture/particleTexture.png";
 
 export default function Particle(props) {
     const particleRef = useRef();
@@ -15,7 +16,7 @@ export default function Particle(props) {
 
 	const matcapTexture = useLoader(
 		TextureLoader,
-		"/texture/particleTexture.png"
+		particleTexture
 	);
 
 	return (

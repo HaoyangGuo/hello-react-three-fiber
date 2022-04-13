@@ -4,6 +4,8 @@ import { TextureLoader } from "three/src/loaders/TextureLoader";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
 import { useLoader, extend } from "@react-three/fiber";
+import textTecture from "../texture/textTexture.png";
+import Font from "../fonts/helvetiker_regular.typeface.blob";
 
 export default function Text(props) {
 	extend({ TextGeometry });
@@ -20,7 +22,7 @@ export default function Text(props) {
 
 	const font = useLoader(
 		FontLoader,
-		"/fonts/helvetiker_regular.typeface.json"
+		Font
 	);
 
 	const config = useMemo(
@@ -37,7 +39,7 @@ export default function Text(props) {
 		}),
 		[font]
 	);
-	const matcapTexture = useLoader(TextureLoader, "/texture/textTexture.png");
+	const matcapTexture = useLoader(TextureLoader, textTecture);
 	return (
 		<mesh ref={textRef}>
 			<textGeometry args={["Hello, \nreact\n-three\n-fiber!", config]} />
