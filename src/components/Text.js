@@ -14,16 +14,13 @@ export default function Text(props) {
 
 	useEffect(() => {
 		textRef.current.geometry.computeBoundingBox();
-        const boundingBox = textRef.current.geometry.boundingBox;
-        const center = new THREE.Vector3();
-        boundingBox.getCenter(center);
-        textRef.current.geometry.translate(-center.x,-center.y,-center.z);  
+		const boundingBox = textRef.current.geometry.boundingBox;
+		const center = new THREE.Vector3();
+		boundingBox.getCenter(center);
+		textRef.current.geometry.translate(-center.x, -center.y, -center.z);
 	}, []);
 
-	const font = useLoader(
-		FontLoader,
-		Font
-	);
+	const font = useLoader(FontLoader, Font);
 
 	const config = useMemo(
 		() => ({
